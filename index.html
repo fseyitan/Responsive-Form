@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsiveness</title>
+  </head>
+  <style>
+    body {
+      background-image: url(./images/bg-intro-mobile.png);
+      background-color: hsla(0, 100%, 74%, 0.9);
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+      margin: auto;
+      margin-top: 95px;
+    }
+    .box {
+      flex: 1;
+    }
+    .one {
+      /* border: 1px solid black; */
+      color: hsl(0, 0%, 100%);
+      text-align: center;
+    }
+    .one h1 {
+      /* border: 1px solid black; */
+      width: 50%;
+      margin: auto;
+    }
+    .one p {
+      /* border: 1px solid black; */
+      width: 70%;
+      margin: auto;
+      margin-top: 25px;
+      line-height: 22px;
+    }
+    .two {
+      /* border: 1px solid black; */
+      margin-top: 50px;
+      padding: 20px 0px 90px 0px;
+    }
+    .two h4 {
+      /* border: 1px solid black; */
+      position: relative;
+      display: block;
+      width: 80%;
+      margin: auto;
+      color: hsl(0, 0%, 100%);
+      background-color: hsl(247, 32%, 48%);
+      text-align: center;
+      padding: 15px 0px;
+      border-radius: 10px;
+      line-height: 25px;
+    }
+    .two h4 span {
+      font-weight: 100;
+    }
+    .two h5 {
+      display: none;
+    }
+    .two div {
+      /* border: 1px solid black; */
+      width: 80%;
+      height: 15px;
+      margin: auto;
+      border-radius: 0px 0px 10px 10px;
+      background-color: hsl(0, 0%, 0%, 0.15);
+      margin-top: -7px;
+    }
+    form {
+      /* border: 1px solid black; */
+      width: 80%;
+      margin: auto;
+      margin-top: 25px;
+      background-color: hsl(0, 0%, 100%);
+      padding: 5px 0px 25px 0px;
+      border-radius: 10px;
+    }
+    input {
+      display: block;
+      border: 1px solid hsl(0, 0%, 67%);
+      border-radius: 5px;
+      width: 85%;
+      height: 45px;
+      margin: auto;
+      padding-left: 10px;
+      font-weight: 700;
+    }
+    form nav {
+      /* border: 1px solid black; */
+      transition: 0.5s;
+    }
+    form nav:hover{
+      opacity: 0.7;
+    }
+    #submit {
+      position: relative;
+      border: 1px solid transparent;
+      display: block;
+      width: 90%;
+      height: 55px;
+      color: hsl(0, 0%, 100%);
+      background-color: hsl(154, 59%, 51%);
+      cursor: pointer;
+      padding: 8px 0px 0px 0px;
+      transition: 0.3s;
+    }
+    aside {
+      /* border: 1px solid black; */
+      width: 90%;
+      height: 10px;
+      margin: auto;
+      border-radius: 0px 0px 5px 5px;
+      background-color: #31b980;
+      margin-top: -25px;
+    }
+    form p {
+      /* border: 1px solid black; */
+      width: 78%;
+      margin: auto;
+      margin-top: 10px;
+      color: hsl(246, 25%, 77%);
+      text-align: center;
+      font-size: 0.85rem;
+    }
+    form p a {
+      color: hsl(0, 100%, 74%);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    form .desktopterms {
+      display: none;
+    }
+    @media screen and (min-width: 760px) {
+      body {
+        background-image: url(./images/bg-intro-desktop.png);
+        background-color: hsla(0, 100%, 74%, 0.9);
+      }
+      main {
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        margin: auto;
+        margin-top: 50px;
+      }
+      .one {
+        /* border: 1px solid black; */
+        color: hsl(0, 0%, 100%);
+        text-align: left;
+        margin-top: 245px;
+        height: auto;
+      }
+      .one h1 {
+        /* border: 1px solid black; */
+        width: 100%;
+        margin-left: 0px;
+        font-size: 2.7rem;
+        line-height: 50px;
+      }
+      .one p {
+        /* border: 1px solid black; */
+        width: 90%;
+        margin-top: 25px;
+        margin-left: 0px;
+        font-size: 1rem;
+        line-height: 22px;
+      }
+      .two h4 {
+        display: none;
+      }
+      .two h5 {
+        /* border: 1px solid black; */
+        position: relative;
+        display: block;
+        width: 80%;
+        margin: auto;
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(247, 32%, 48%);
+        text-align: center;
+        padding: 15px 0px;
+        border-radius: 10px;
+        line-height: 25px;
+      }
+      .two h5 span {
+        font-weight: 100;
+      }
+      form p {
+        display: none;
+      }
+      form .desktopterms {
+        /* border: 1px solid black; */
+        display: block;
+        width: 85%;
+        font-size: 0.65rem;
+      }
+    }
+  </style>
+  <body>
+    <main>
+      <section class="box one">
+        <h1>
+          Learn to code by <br />
+          watching others
+        </h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+      <section class="box two">
+        <h4>
+          Try it free 7days<span> then <br />$20/mo. thereafter</span>
+        </h4>
+        <h5>Try it free 7days<span> then $20/mo. thereafter</span></h5>
+        <div class="shadow"></div>
+        <form action="mailto:fseyitan@gmail.com" method="post">
+          <label for="Fname"></label><br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="First Name"
+            required
+          /><br />
+          <label for="Lname"></label><br />
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Last Name"
+            required
+          /><br />
+          <label for="Email"></label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          /><br />
+          <label for="Password"></label><br />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+            minlength="6"
+          /><br />
+          <nav>
+            <input type="submit" value="CLAIM YOUR FREE TRIAL" id="submit" />
+            <br />
+            <aside></aside>
+          </nav>
+          <p>
+            By clicking the button you are agreeing to <br />
+            our
+            <a href="#">Terms and Services</a>
+          </p>
+          <p class="desktopterms">
+            By clicking the button you are agreeing to our
+            <a href="#">Terms and Services</a>
+          </p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
